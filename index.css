@@ -1,0 +1,461 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    padding-top: 1%;
+    background-color: black;
+
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.nav a{
+    padding: 1px;
+    width: 8%;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+   color: white;
+}
+
+.greetings-container {  
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+      
+}   
+
+.greetings-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(196, 194, 194, 0.5);
+    color: rgb(16, 16, 16);
+    height: 60%;
+    width: 60%;
+    border-radius: 20px;
+    border: 2.5px dotted rgb(248, 211, 3);
+
+    box-shadow: 0 0 30px rgba(240, 98, 3, 0.87);
+}
+
+body {
+ background-image: url("images/image1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.first-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 4%;
+    gap: 5vw;
+
+ 
+}
+
+.first-page-text {
+    background-color: rgba(45, 44, 44, 0.5);
+    color: rgb(176, 176, 176);
+    height: fit-content;
+    width: 55vw;   
+    padding: 2%;
+    border-radius: 20px;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2.5px dotted rgb(214, 87, 8);
+    box-shadow: 0 0 25px rgba(156, 233, 3, 0.6);
+}
+
+
+.first-page-image {
+  width: 15%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.second-page {
+    color: black;
+    background-color: rgba(195, 194, 194, 0.5);
+    margin: 10%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2.5px dotted rgb(13, 221, 127);
+    box-shadow: 0 0 30px rgba(145, 3, 233, 0.6);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  margin: 40px auto;
+}
+
+
+.line {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #333;
+  transform: translateX(-50%);
+}
+
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  
+}
+
+
+.timeline-item.left {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 32px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border: 4px solid #333;
+  border-radius: 50%;
+ 
+}
+
+.timeline-item.left .timeline-dot {
+  right: -9px;
+}
+
+
+.timeline-item.right .timeline-dot {
+  left: -9px;
+}
+
+.experience {
+  padding: 15px 18px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 45%;
+  width: 95%;
+  background: rgb(156, 153, 153);
+  border: 3px dotted #adf601;
+  box-shadow: 0 0 10px rgba(152, 146, 34, 0.997);
+  border-radius: 10px;
+}
+
+.timeline-item.left .experience {
+  margin-right: 1.5vw;
+}
+
+.timeline-item.right .experience {
+margin-left: 1.5vw;
+}
+
+
+
+.third-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(242, 236, 236);
+}
+
+
+
+.third-page-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+
+}
+
+.project {
+    background-color: rgb(71, 71, 71, 0.7);
+    width: 40vw;
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px dotted wheat;
+    box-shadow: 0 0 20px rgba(1, 129, 104, 0.6);
+
+}
+
+.fourth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.fourth-page-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 5%;
+} 
+
+
+.contact-form-fields, .contact-details  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-fields {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+}
+
+.contact-form-fields input{
+    width: 80%;
+    height: 35%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.contact-form-fields textarea{
+
+    width: 80%;
+    height: 95%;
+    border-radius: 10px;
+    padding: 8px;
+    resize: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(211, 211, 211, 0.663);
+    border: 2px dotted rgb(235, 123, 4);
+    box-shadow: 0 0 40px rgba(117, 2, 212, 0.6);
+    height: 55vh;
+    width: 40vw;
+    padding: 2%;
+}
+
+.contact-details {
+    width: 30vw;
+    border-radius: 15px;
+    background-color: rgba(183, 189, 189, 0.863);
+    border: 3px dotted rgb(179, 255, 0);
+    box-shadow: 0 0 40px rgba(117, 2, 212, 0.6);
+    
+}
+
+@media (max-width: 700px) {
+  .contact-form-fields button {
+    width: 40%;
+    height: 20%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
+}
+
+
+.lang-one{
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lang-two{
+    font-size: 1.8rem;
+}
+
+.experience ul,
+.experience h3,
+.experience p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.project p, .project h3  {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.first-page-image {
+    border: 2px dotted rgb(202, 13, 13);
+    box-shadow: 0 0 19px rgba(242, 174, 1, 0.821);
+}
+
+.contact-form h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1.5rem;    
+}
+
+.contact-form button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1.5rem;  
+    height: 40%;
+    width: 40%;
+    margin-bottom: 2%;
+    border-radius: 10px;  
+    font-size: 1rem;
+}
+
+.contact-details {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1.5rem;  
+}
+
+.contact-text-div-one {
+    margin-bottom: 0;
+}
+
+.contact-form-text-one {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.pull-my-resume {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.resume-download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 80%;
+
+}
+
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80%;
+    height: 20%;
+    color: rgb(12, 11, 11);
+    text-decoration: none;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.de-button {
+    border: 2px solid rgb(242, 146, 3);
+    background-color: #f6ad01;
+}
+
+.eng-button {
+   border: 2px solid rgb(8, 205, 8);
+   background-color: #46f601;
+}
+
+.eng-button:active, .de-button:active, .send-button:active {
+    background-color: #25f89d;
+    transform: scale(1.1);
+}
+
+.send-button {
+   border: 2px solid rgb(241, 217, 6);
+   background-color: #f6c101;
+   margin-bottom: 0;
+   cursor: pointer;
+}
+
+.send-button:hover, .eng-button:hover, .de-button:hover {
+  transform: scale(1.1);
+}
+
+.greetings-text p{
+    margin-top: 0;
+}
+
+.greetings-text h1{
+    margin-top: 0;
+}
+
+*{
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.greetings-container,
+.first-page,
+.second-page,
+.third-page,
+.fourth-page {
+    scroll-margin-top: 10vh;
+}
+
+.nav-active {
+    background-color: #585858;
+    padding: 1px;
+    border-radius: 5px;
+    border: 2px solid wheat;
+}
+
+.lang-one,
+.lang-two {
+    transition: opacity 0.5s ease;
+}
